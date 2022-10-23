@@ -1,0 +1,5 @@
+data_reza = read.csv("C:/1/Houseprices.csv")
+View(data_reza)
+library(ggplot2)
+qplot(data_reza$Price,data_reza$Bedrooms)
+plot(data_reza$Price,data_reza$Bedrooms)
