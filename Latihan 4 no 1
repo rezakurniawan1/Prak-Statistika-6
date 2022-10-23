@@ -1,0 +1,11 @@
+data_reza=read.csv("C:/1/DirectMarketing.csv")
+View(data_reza)
+
+hist(data_reza$AmountSpent)
+hist(data_reza$AmountSpent[data_reza$OwnHome=="Own"])
+hist(data_reza$AmountSpent[data_reza$OwnHome=="Rent"])
+
+d=density(data_reza$AmountSpent)
+plot(d)
+d=density(data_reza$AmountSpent[data_reza$OwnHome=="Own"])
+plot (d)
